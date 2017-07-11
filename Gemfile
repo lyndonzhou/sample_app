@@ -69,7 +69,11 @@ gem 'jbuilder',     '2.6.1'
 group :development, :test do
   gem 'sqlite3', '1.3.13'
   gem 'rspec-rails', '3.5.2'
+  gem 'guard-rspec', '4.7.3'
   gem 'byebug',  '9.0.6', platform: :mri
+  gem 'spork-rails', github: 'railstutorial/spork-rails'
+  gem 'guard-spork', '2.1.0'
+  gem 'childprocess', '0.7.1'
 end
 
 group :development do
@@ -86,6 +90,8 @@ group :test do
   # gem 'guard-minitest',           '2.4.4'
   gem 'selenium-webdriver', '3.0.0'
   gem 'capybara', '2.9.0'
+  # Uncomment these lines on Linux.
+  gem 'libnotify', '0.8.0'
 end
 
 group :doc do
